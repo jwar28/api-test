@@ -9,6 +9,6 @@ RUN mkdir -p /app/src
 
 COPY src/ /app/src/
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD ["python", "/app/src/app.py"]
