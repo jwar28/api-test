@@ -1,14 +1,10 @@
-version: '3'
-
 services:
   api:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
-    volumes:
-      - ./src:/app/src
+      - "8000:8000"
     environment:
       - ENVIRONMENT=development
     restart: unless-stopped
